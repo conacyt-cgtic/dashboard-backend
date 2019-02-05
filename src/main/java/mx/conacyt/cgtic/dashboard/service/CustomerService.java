@@ -11,4 +11,5 @@ public interface CustomerService {
     void delete(long id);
     List<Customer> getAllCustomers();
     List<Customer> findByAge(int age);
+    long computeFactLen(int n);
 }

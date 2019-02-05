@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import mx.conacyt.cgtic.dashboard.core.Calculator;
 import mx.conacyt.cgtic.dashboard.model.Customer;
 import mx.conacyt.cgtic.dashboard.repo.CustomerRepository;
 
@@ -48,5 +49,10 @@ public class CustomerServiceImpl implements CustomerService {
         return customers;
     }
 
+    @Override
+    public long computeFactLen(int n) {
+        Calculator c = new Calculator();
+        return c.computeFactLen(n);
+    }
 
 }
