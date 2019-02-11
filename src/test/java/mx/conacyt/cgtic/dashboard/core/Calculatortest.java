@@ -1,11 +1,10 @@
-package mx.conacyt.cgtic.dashboard.service;
+package mx.conacyt.cgtic.dashboard.core;
 
 import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
