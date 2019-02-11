@@ -7,10 +7,11 @@ import org.junit.Test;
 
 public class Calculatortest {
     private final static Logger LOG = Logger.getLogger(Calculatortest.class);
-    private Calculator service = new Calculator();
+    private Calculator service;
     
     @Test
     public void testCalc() {
+        service = new Calculator();
         assertTrue(check(100, 158));
         assertTrue(check(200, 375));
         assertTrue(check(300, 615));
