@@ -7,11 +7,16 @@ import org.junit.Test;
 
 public class Calculatortest {
     private final static Logger LOG = Logger.getLogger(Calculatortest.class);
-    private Calculator service;
+
+    private static long computeFactLen(int n) {
+        double res = 1.0;
+        for(int i=1; i<=n; i++)
+            res = res + Math.log10(i);
+        return (long)res;
+    }
     
     @Test
     public void testCalc() {
-        service = new Calculator();
         assertTrue(check(100, 158));
         assertTrue(check(200, 375));
         assertTrue(check(300, 615));
@@ -41,7 +46,7 @@ public class Calculatortest {
         assertTrue(check(90000, 406799));
     }
     private boolean check(int n, long m) {
-        long calc = service.computeFactLen(n);
+        long calc = computeFactLen(n);
         LOG.info("Calculando los digitos para factorial de "+n+": " + calc); 
         return calc==m;
     }
