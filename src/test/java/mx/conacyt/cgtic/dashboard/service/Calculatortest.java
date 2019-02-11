@@ -2,17 +2,20 @@ package mx.conacyt.cgtic.dashboard.service;
 
 import static org.junit.Assert.assertTrue;
 
+import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import mx.conacyt.cgtic.dashboard.core.Calculator;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class Calculatortest {
-    @Autowired
-    private CustomerService service;
+    private final static Logger LOG = Logger.getLogger(Calculatortest.class);
+    private Calculator service = new Calculator();
     
     @Test
     public void testCalc() {
@@ -45,6 +48,8 @@ public class Calculatortest {
         assertTrue(check(90000, 406799));
     }
     private boolean check(int n, long m) {
-        return service.computeFactLen(n)==m;
+        long calc = service.computeFactLen(n);
+        LOG.info("Calculando los digitos para factorial de "+n+": " + calc); 
+        return calc==m;
     }
 }
