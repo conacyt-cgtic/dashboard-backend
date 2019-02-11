@@ -4,14 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import mx.conacyt.cgtic.dashboard.core.Calculator;
-
-@RunWith(SpringRunner.class)
-@SpringBootTest
 public class Calculatortest {
     private final static Logger LOG = Logger.getLogger(Calculatortest.class);
     private Calculator service = new Calculator();
