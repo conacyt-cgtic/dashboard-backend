@@ -27,7 +27,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus.cgtic.conacyt.mx</id>
-            <url>http://nexus.cgtic.conacyt.mx/repository/maven-snapshots/</url>
+            <url>http://172.26.13.249:18080/repository/maven-snapshots/</url>
             <uniqueVersion>true</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
