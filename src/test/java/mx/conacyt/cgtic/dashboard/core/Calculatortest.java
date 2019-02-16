@@ -17,6 +17,8 @@ public class Calculatortest {
     
     @Test
     public void testCalc() {
+        long calc = computeFactLen(10000000);
+        System.out.println("El valor es calc: "+calc);
         assertTrue(check(100, 158));
         assertTrue(check(200, 375));
         assertTrue(check(300, 615));
@@ -44,6 +46,7 @@ public class Calculatortest {
         assertTrue(check(70000, 308760));
         assertTrue(check(80000, 357507));
         assertTrue(check(90000, 406799));
+        
     }
     private boolean check(int n, long m) {
         long calc = computeFactLen(n);
