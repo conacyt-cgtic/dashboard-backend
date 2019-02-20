@@ -23,7 +23,7 @@ import mx.conacyt.cgtic.dashboard.service.CustomerService;
 @RestController
 @RequestMapping("/api")
 public class CustomerController {
-
+    // agregando un comentario de prueba
 	@Autowired
 	CustomerService service;
 
