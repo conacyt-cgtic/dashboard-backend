@@ -27,14 +27,14 @@
     <repositories>
         <repository>
             <id>nexus.cgtic.conacyt.mx</id>
-            <url>http://nexus.cgtic.conacyt.mx/repository/maven-snapshots/</url>
+            <url>http://nexus.cgtic.qbits.mx:18080/repository/maven-snapshots/</url>
         </repository>
     </repositories>
     
     <distributionManagement>
         <snapshotRepository>
             <id>nexus.cgtic.conacyt.mx</id>
-            <url>http://nexus.cgtic.conacyt.mx/repository/maven-snapshots/</url>
+            <url>http://nexus.cgtic.qbits.mx:18080/repository/maven-snapshots/</url>
             <uniqueVersion>true</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
